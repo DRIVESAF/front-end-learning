@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单的创建</title>
+</head>
+
+<body>
+    <from action="tijiao.php" method="POST">
+        <p>
+            请输入你的姓名：<input type="text">
+        </p>
+
+        <p>
+            报考院校：<input type="text" value="清华大学" disabled>
+        </p>
+
+        <p>
+            毕业学校：<input type="text" placeholder="请随便填">
+        </p>
+
+        <p>
+            性别：
+            <label>
+                <input type="radio" name="sex" value="🚹" checked>男
+            </label>
+
+            <label>
+                <input type="radio" name="sex" value="🚺" checked>女
+            </label>
+        </p>
+
+        <p>
+            血型：
+            <input type="radio" name="bloodtype" checked id="A"> <label for="A">A</label>
+            <input type="radio" name="bloodtype" id="B"> <label for="B">B</label>
+            <input type="radio" name="bloodtype" id="O"> <label for="O">O</label>
+            <input type="radio" name="bloodtype" id="AB"> <label for="AB">AB</label>
+        </p>
+
+        <p>
+            爱好：
+            <label>
+                <input type="checkbox" name="hobby" value="⚽">足球
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobby" value="🏀">篮球
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobby" value="🏸">羽毛球
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobby" value="🏊‍">游泳
+            </label>
+        </p>
+
+        <p>
+            请输入密码：
+            <input type="password">
+        </p>
+
+        <p>请选择你喜欢的编程语言：
+            <select>
+                <option value="Java">Java</option>
+                <option value="Python">python</option>
+                <option value="C++">C++</option>
+                <option value="PHP">PHP</option>
+            </select>
+        </p>
+
+        <p>
+            留言：
+            <textarea cols="100" rows="10"></textarea>
+        </p>
+
+        <p>
+            <button>试着点一下</button>
+        </p>
+
+        <p>
+            <input type="submit" value="提交表单">
+        </p>
+
+        <p>
+            <input type="reset" value="重置表单">
+        </p>
+    </from>
+</body>
+
+</html>

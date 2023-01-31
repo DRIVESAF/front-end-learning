@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5新增的表单控件</title>
+</head>
+
+<body>
+    <from action="">
+        <p>
+            选个喜欢的颜色：
+            <input type="color">
+        </p>
+
+        <p>
+            选个良辰吉日：
+            <input type="date">
+        </p>
+
+        <p>
+            选个休息时间：
+            <input type="time">
+        </p>
+
+        <p>
+            电子邮件：
+            <input type="email">
+        </p>
+
+        <p>
+            必填：
+            <input type="text" required>
+        </p>
+
+        <p>
+            数字：
+            <input type="number" min="0" max="100">
+        </p>
+
+        <p>
+            拖拽条：
+            <input type="range" min="0" max="200">
+        </p>
+
+        <p>
+            有问必答：
+            <input type="search">
+        </p>
+
+        <p>
+            网址：
+            <input type="url">
+        </p>
+
+        <p>
+            省份：
+            <input type="text" list="province-list">
+            <datalist id="province-list">
+                <option value="云南">
+                <option value="广西">
+                <option value="广东">
+                <option value="福建">
+                <option value="贵州">
+                <option value="湖南">
+                <option value="湖北">
+                <option value="四川">
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="提交表单">
+        </p>
+    </from>
+</body>
+
+</html>
